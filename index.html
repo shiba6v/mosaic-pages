@@ -1,12 +1,156 @@
 <!doctype html>
-<html lang="ja"><head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Mosaic | 写真と動画の顔隠し</title>
-<meta name="description" content="集合写真や動画で、写り込んだ人の顔を隠せるiPhone・iPadアプリ。顔を選んでモザイクや顔文字を重ね、撮影場所も確認してから保存できます。">
-<link rel="canonical" href="https://shiba6v.github.io/mosaic-pages/"><meta property="og:title" content="Mosaic | 写真と動画の顔隠し"><meta property="og:image" content="https://shiba6v.github.io/mosaic-pages/images/coast.webp">
-<link rel="icon" href="images/icon.webp?v=15"><link rel="stylesheet" href="site.css"></head>
-<body><header><a class="brand" href="./"><img alt="" src="images/icon.webp?v=15" width="42" height="42">Mosaic</a><a href="#features">できること</a></header>
-<main><section class="hero"><div><p class="eyebrow">iPhone・iPad 用 顔隠しアプリ</p><h1>この写真、<br>顔だけ隠して<br>シェアしよう。</h1><p>集合写真に写った友だちも、動画の後ろを歩く人も。Mosaicなら、スマホで顔にモザイクをかけられます。</p><a class="cta" href="#features">使い方を見る <span aria-hidden="true">↓</span></a></div>
-<figure><img src="images/coast.webp" width="1280" height="853" alt="海辺の二人の顔をモザイクと黄色い顔文字で隠した作例"></figure></section>
-<section class="features" id="features"><h2>写真や動画を選んだら</h2><div class="cards"><article><h3>写真に残す顔を選ぶ</h3><p>写真を開くと顔にモザイクがかかります。顔を出したい人はタップして外せます。顔文字や好きな色で隠すこともできます。</p></article><article><h3>動画では顔を追いかけます</h3><p>人の動きに合わせてモザイクが移動します。動画は5分まで。書き出すときは広告が表示されます。</p></article><article><h3>撮影場所も確認</h3><p>保存する前に、撮影日時やカメラの情報を編集できます。位置情報は地図で選び直したり、削除したりできます。</p></article></div><p class="detail">顔の検出と書き出しは端末内で行います。共有する前に仕上がりを確認できます。</p></section></main>
-<footer><strong>Mosaic</strong><nav aria-label="サポートと規約"><a href="https://yufke8qsjd.execute-api.ap-northeast-1.amazonaws.com/prod/support">サポート</a><a href="https://yufke8qsjd.execute-api.ap-northeast-1.amazonaws.com/prod/privacy">プライバシーポリシー</a><a href="https://yufke8qsjd.execute-api.ap-northeast-1.amazonaws.com/prod/terms">利用規約</a></nav></footer></body></html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Mosaic | 写真と動画の顔をモザイクで隠せるiPhone・iPadアプリ</title>
+<meta name="description" content="集まりで撮った写真や動画を共有する前に、顔を出したくない人だけにモザイクをかけられるiPhone・iPadアプリ。顔の検出から書き出しまで端末の中で行い、位置情報は初期設定で取り除きます。">
+<link rel="canonical" href="https://shiba6v.github.io/mosaic-pages/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Mosaic">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:url" content="https://shiba6v.github.io/mosaic-pages/">
+<meta property="og:title" content="Mosaic | 写真と動画の顔をモザイクで隠せるiPhone・iPadアプリ">
+<meta property="og:description" content="集まりで撮った写真や動画を共有する前に、顔を出したくない人だけにモザイクをかけられるiPhone・iPadアプリです。">
+<meta property="og:image" content="https://shiba6v.github.io/mosaic-pages/images/picnic.webp">
+<meta property="og:image:alt" content="川辺のピクニックに集まった3人の仕上がりイメージ。1人の顔だけにモザイクがかかっている。">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#fffdf6">
+<link rel="icon" href="images/icon.webp?v=15">
+<link rel="stylesheet" href="site.css">
+</head>
+<body>
+<a class="skip" href="#main">本文へ移動</a>
+
+<header class="masthead">
+  <div class="wrap masthead-inner">
+    <a class="brand" href="./"><img src="images/icon.webp?v=15" alt="" width="44" height="44">Mosaic</a>
+    <nav aria-label="ページ内の案内">
+      <ul>
+        <li><a href="#photo">写真の使い方</a></li>
+        <li><a href="#video">動画</a></li>
+        <li><a href="#location">位置情報</a></li>
+        <li><a href="https://yufke8qsjd.execute-api.ap-northeast-1.amazonaws.com/prod/support">サポート</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="wrap hero-grid">
+      <p class="label hero-label">iPhone・iPad用アプリ</p>
+      <h1 id="hero-title"><span class="w">顔を出したくない</span><span class="w">人だけ、</span><span class="w">モザイクで</span><span class="w">隠せます。</span></h1>
+      <div class="hero-lead">
+        <p>川辺のピクニック、サークルの打ち上げ、子どもの運動会。みんなで撮った写真をSNSやグループのアルバムに載せる前に、写りたくない人の顔だけを隠せるアプリです。</p>
+        <p class="hero-actions"><a class="button" href="#photo">写真の使い方を見る</a></p>
+      </div>
+      <figure class="hero-photo">
+        <img src="images/picnic.webp" width="1500" height="1000" alt="川辺のピクニックに集まった3人の仕上がりイメージ。1人の顔だけにモザイクがかかっている。" fetchpriority="high">
+        <figcaption><span class="tag">生成画像</span><span>3人のうち、1人の顔だけにモザイクをかけた仕上がりイメージ。</span></figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="section" id="photo" aria-labelledby="photo-title">
+    <div class="wrap split">
+      <div class="split-text">
+        <p class="label">写真の使い方</p>
+        <h2 id="photo-title"><span class="w">顔を出す人は</span><span class="w">タップで選びます</span></h2>
+        <p class="intro">写真を開くと、見つかった顔にはすでにモザイクがかかっています。そこから顔を出してもいい人だけを外していくので、隠し忘れが起きにくい順番です。隠し方はモザイクのほか、ぼかし・顔文字・色の塗りつぶしからも選べます。</p>
+        <ol class="steps" role="list">
+          <li>
+            <h3>写真を選ぶ</h3>
+            <p>共有したい写真を選ぶと、編集画面が開きます。</p>
+          </li>
+          <li>
+            <h3>顔を出す人をタップする</h3>
+            <p>顔を出してもいい人の顔をタップすると、その人のモザイクが外れます。</p>
+          </li>
+          <li>
+            <h3>足りない所は手動で隠す</h3>
+            <p>横顔や遠くに小さく写った人など、うまく見つからなかった顔は、範囲を手動で指定して隠せます。名札や車のナンバーのように、顔以外に隠したい所にも使えます。</p>
+          </li>
+          <li>
+            <h3>保存する</h3>
+            <p>仕上がりを確かめてから保存します。</p>
+          </li>
+        </ol>
+      </div>
+      <figure class="shot">
+        <img src="images/editor.webp" width="645" height="1401" alt="Mosaicの写真編集画面のスクリーンショット" loading="lazy" decoding="async">
+        <figcaption>写真の編集画面</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="section section-tinted" id="video" aria-labelledby="video-title">
+    <div class="wrap split split-reverse">
+      <div class="split-text">
+        <p class="label">動画</p>
+        <h2 id="video-title"><span class="w">動画では、</span><span class="w">モザイクが</span><span class="w">顔の動きに</span><span class="w">ついていきます</span></h2>
+        <p class="intro">動画内で見つけた顔を追跡し、顔の動きに合わせてモザイクが移動します。通りすがりの人が映り込んだ旅行の動画や、発表会の様子を共有したいときに。</p>
+        <dl class="specs">
+          <div><dt>扱える長さ</dt><dd><strong>5分</strong>までの動画</dd></div>
+          <div><dt>保存前の確認</dt><dd>最後まで再生して、隠れているか確かめられます</dd></div>
+          <div><dt>書き出し</dt><dd>書き出すときに広告をご覧いただきます</dd></div>
+        </dl>
+      </div>
+      <figure class="shot">
+        <img src="images/video.webp" width="645" height="1401" alt="Mosaicの動画編集画面のスクリーンショット" loading="lazy" decoding="async">
+        <figcaption>動画の編集画面</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="faq-title">
+    <div class="wrap">
+      <p class="label">保存と共有</p>
+      <h2 id="faq-title">共有する前に気になること</h2>
+      <div class="qa-grid">
+        <article class="qa qa-wide" id="location">
+          <h3>撮った場所が相手に伝わりませんか？</h3>
+          <p>スマートフォンで撮った写真や動画には、撮影した場所の緯度・経度が記録されていることがあります。Mosaicでは、保存するときに位置情報を取り除くのが初期設定です。</p>
+          <p>旅行の記録などで場所を残したいときは、地図で地名や住所を検索して、記録する位置を選び直せます。</p>
+          <dl class="data">
+            <div><dt>初期設定</dt><dd>位置情報を取り除く</dd></div>
+            <div><dt>場所を残すとき</dt><dd>地図で検索して位置を選ぶ</dd></div>
+          </dl>
+        </article>
+        <article class="qa">
+          <h3>写真や動画はどこで処理されますか？</h3>
+          <p>顔の検出もモザイクの書き出しも、お使いのiPhone・iPadの中で行います。</p>
+        </article>
+        <article class="qa">
+          <h3>元の写真や動画はどうなりますか？</h3>
+          <p>そのまま残ります。Mosaicで仕上げた写真や動画は元のファイルとは別に保存されるので、あとから元の写真で作り直すこともできます。</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="release" id="support" aria-labelledby="support-title">
+    <div class="wrap release-inner">
+      <div>
+        <h2 id="support-title">使い方のご質問はサポートページへ</h2>
+        <p>使い方の質問や気づいたことは、サポートページからお寄せください。</p>
+      </div>
+      <a class="button button-ink" href="https://yufke8qsjd.execute-api.ap-northeast-1.amazonaws.com/prod/support">サポートページへ</a>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <strong>Mosaic</strong>
+    <nav aria-label="サポートと規約">
+      <ul>
+        <li><a href="https://yufke8qsjd.execute-api.ap-northeast-1.amazonaws.com/prod/support">サポート</a></li>
+        <li><a href="https://yufke8qsjd.execute-api.ap-northeast-1.amazonaws.com/prod/privacy">プライバシーポリシー</a></li>
+        <li><a href="https://yufke8qsjd.execute-api.ap-northeast-1.amazonaws.com/prod/terms">利用規約</a></li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+</body>
+</html>
